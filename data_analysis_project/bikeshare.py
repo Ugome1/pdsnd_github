@@ -223,7 +223,7 @@ def user_stats(df):
 
 
 def data_display(df):
-    """"Displays filtered raw data from bikeshare users."""
+    """"Gives user option to display filtered raw data from bikeshare."""
 
     print('\nDetailed view?...\n')
     start_time = time.time()
