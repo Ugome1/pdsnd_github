@@ -229,7 +229,7 @@ def data_display(df):
     start_time = time.time()
     # TO DO: Display a prompt that ask the user if they want to see 5 lines of raw data
     print("\nDo you wish to see the first 5 lines of raw data?\n")
-    input_data = input("\n(Yes/No): \n").casefold()
+    input_data = input("\n(Yes/No): \n").lower()
 
     index_count = 5
     # TO DO: Display that data if the answer is 'yes',
@@ -237,7 +237,7 @@ def data_display(df):
         print(df.head(index_count))
         # TO DO: Displays the next 5 lines,
         print("\nDo you want to see the next 5 lines?\n")
-        more = input("\n(Yes/No): \n").casefold()
+        more = input("\n(Yes/No): \n").lower()
         if more == 'yes':
             index_count += 5
             print('showing 5 more lines')
