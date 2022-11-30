@@ -5,7 +5,7 @@ Project creation: 22nd November, 2022
 READme file: 30th November, 2022
 
 ### Project Title
-Explore US Bikeshare data
+Explore US Bikeshare data from three (3) cities
 
 ### Description
 The project was created to help analyse the data of Bikeshare company from three (3) cities in which they operate. The program takes user input which includes city, month and day to do different statistical calculations and display to the user a results of the calculations.
