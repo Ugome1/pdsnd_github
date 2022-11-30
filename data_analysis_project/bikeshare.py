@@ -132,8 +132,8 @@ def time_stats(df):
         common_week_day = df['day_of_week'].mode()[0]
         common_start_hour = df['hour'].mode()[0]
         print("For The Month Of {}".format(city))
-        print("The Most Common hour is - ", common_start_hour)
-        print("The Most Common day is - ", common_week_day)
+        print("The Most Common hour is - {}".format(common_start_hour))
+        print("The Most Common day is - {}".format(common_week_day))
 
 
     # To DO: displays the most common hours for a specified weekday for all months
@@ -223,13 +223,13 @@ def user_stats(df):
 
 
 def data_display(df):
-    """"Displays filtered raw data from bikeshare users."""
+    """"Gives user option to display filtered raw data from bikeshare."""
 
     print('\nDetailed view?...\n')
     start_time = time.time()
     # TO DO: Display a prompt that ask the user if they want to see 5 lines of raw data
     print("\nDo you wish to see the first 5 lines of raw data?\n")
-    input_data = input("\n(Yes/No): \n").casefold()
+    input_data = input("\n(Yes/No): \n").lower()
 
     index_count = 5
     # TO DO: Display that data if the answer is 'yes',
@@ -237,7 +237,7 @@ def data_display(df):
         print(df.head(index_count))
         # TO DO: Displays the next 5 lines,
         print("\nDo you want to see the next 5 lines?\n")
-        more = input("\n(Yes/No): \n").casefold()
+        more = input("\n(Yes/No): \n").lower()
         if more == 'yes':
             index_count += 5
             print('showing 5 more lines')
@@ -266,4 +266,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
