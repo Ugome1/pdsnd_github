@@ -132,8 +132,8 @@ def time_stats(df):
         common_week_day = df['day_of_week'].mode()[0]
         common_start_hour = df['hour'].mode()[0]
         print("For The Month Of {}".format(city))
-        print("The Most Common hour is - ", common_start_hour)
-        print("The Most Common day is - ", common_week_day)
+        print("The Most Common hour is - {}".format(common_start_hour))
+        print("The Most Common day is - {}".format(common_week_day))
 
 
     # To DO: displays the most common hours for a specified weekday for all months
@@ -266,4 +266,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
